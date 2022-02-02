@@ -78,3 +78,58 @@ span.stage_directions_inline {
 
 span.character_beforespeech {
 }
+
+body {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+background-color: whitesmoke;
+}
+
+main {
+  
+    width: 70%;
+    margin: 0 auto;
+    max-width: 600px;
+    padding: 2em 2em 2em 2em;
+    display: flex;
+    flex-wrap:wrap;
+    
+}
+
+figure {
+    width: 50%;
+    margin:20px auto 20px auto;
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+   }
+
+   section {
+    flex-basis: 300px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+h1, h2 {font-family: Verdana, Geneva, Tahoma, sans-serif;
+text-align: center;
+}
+
+img {
+    width: 100%;
+    box-shadow: 0px 0px 20px rgb(27, 7, 36);
+    }
+
+    p {
+        text-align: justify; color: rgb(64, 49, 77);
+        padding: 2em 1em .06em 1em;
+    
+    }
+    .footer{color:black;}
+
+@media only screen and (max-width: 600px) {
+main { 
+    width: 100%;
+    padding:0;
+}
+p {
+    font-size: .9em;
+}
