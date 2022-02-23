@@ -1,0 +1,317 @@
+/* This stylesheet is where to add styles for your Shakespeare Play */
+/*We usually add something general for the body*/
+
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 60px;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: whitesmoke;
+  width: 100%;
+  margin: 0 auto;
+  /*your style rules go in here */
+}
+nav {position:fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+background-color: whitesmoke;}
+
+section.nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+  }
+  
+  input[type="checkbox"] {
+    display: none;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    color: rgb(80, 96, 99);
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+  }
+  
+  nav ul li {
+    flex: 0 0 8rem; /*the same as flex-grow, flex-shrink, flex-basis */
+    text-align: center;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    display: block;
+    color: rgb(12, 3, 22);
+    font-family: 'Montserrat', sans-serif;
+    font-weight:bold;
+  }
+  
+  nav ul li:hover {
+    background-color: rgb(110, 109, 130);
+    color:rgb(110, 109, 130);
+  }
+  nav ul li a:hover {
+    color: rgb(60, 60, 70);
+  }
+  
+  li ul {
+    display: none;
+    position: absolute;
+    background-color: rgb(110, 109, 130);
+   
+  }
+
+  li ul li a { 
+    padding: 0.3rem 1.5rem;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+  }
+  
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    color: white;
+  }
+  
+  nav ul li ul li {
+    flex: 0 1 auto;
+    width: 8rem; /* the same as the value for flex-basis on the parent li */
+  }
+}
+
+section {
+  border: 0;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 2px;
+  right: 8px;
+  opacity: 0.9;
+}
+
+.backtotop a {
+  text-decoration: none;
+  font-size: 3em;
+  color:rgb(110, 109, 130);
+}
+
+.backtotop a:hover {
+  color:white;
+}
+/*Here follows the class names that you will have in your html*/
+/*You may have more if you added styles in InDesign*/
+/*You need to add the style attributes between the curly brackets*/
+
+/* the following may not be used but it doesn't matter if they are listed here  */
+
+/* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
+
+section.dramatis {
+  width: 70%;
+  margin: auto;
+  max-width: 750px;
+  padding: 5em 0 0 0;
+  
+  
+}
+p.character_name {font-family: 'Montserrat', sans-serif;
+text-align: center;
+padding: 0 0 0.5em 0}
+
+span.character_role {
+  font-family: 'Montserrat', sans-serif;
+  font-style:italic;
+ 
+
+}
+
+section.play {width: 70%; 
+margin:auto;
+max-width: 750px;
+}
+
+figure.sceneoneimg, .acttwoimg, .actthreeimg, .actfourimg, .actfiveimg, .dramatisimg{
+  /* width: 100%;  */
+  max-width: 700px;
+  align-content:center;
+  margin:auto;
+  padding: 0 0 2em 0;
+  flex-basis: 200px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+figure.dramatisimg { padding: 6em;
+
+}
+img.actoneimg,.acttwoimg, .actthreeimg, .actfourimg, .actfiveimg, .dramatisimage {
+  width:100%;
+  display:block;
+  height:auto;
+}
+h1.act { font-family: 'Anton', sans-serif;
+  color: rgb(110, 109, 130);
+  text-align: center;
+  font-size: 50px;
+  font-weight: lighter;
+  border-bottom: 1px solid grey;
+  margin: 0 0 1em 0
+}
+h1.title { font-family:'Anton', sans-serif;
+  text-transform: uppercase;
+  font-size: 50px;
+  text-align:center;
+  kerning: 3px;
+
+}
+p.stagedirection balance-text {
+
+}
+p.character { 
+  margin: 1em 0 0.5em 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight:bolder; 
+  font-style: italic;
+  font-size: 18px
+}
+p.character_name { 
+}
+p.stagedirection {
+  font-family: 'Montserrat', sans-serif;
+  font-style:italic;
+  font: size 13px;
+  padding: 1em 0 1em 0;
+  text-align:right;
+}
+
+span.stage_directions {font-family: 'Montserrat', sans-serif;
+  font-style:italic;
+}
+
+h1.dramatis_head {
+  font-family:'Oswald', sans-serif;
+  font-weight: 600;
+  text-transform:uppercase;
+  text-align: center;
+  margin: 0 0 1em 0;
+  color: white;
+  background-color: rgb(110, 109, 130);
+  
+}
+h2.subtitle {font-family:'Oswald', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  text-transform:uppercase;
+  padding: 0 0 3em 0;
+
+  font-size: 20px;}
+
+h2.first_scene {
+  font-family:'Oswald', sans-serif;
+  font-weight: 400;
+  text-transform:uppercase;
+  text-align: center;
+  color: rgb(80, 96, 99);
+  font-size: 35px;
+  margin: 1.5em 0 0 0;
+}
+h3.location {font-family:'Oswald', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 2em 0;
+  border-bottom: 1px solid grey; 
+}
+h3.play_location {font-family:'Oswald', sans-serif;
+  font-weight: 200;
+  color: rgb(80, 96, 99);
+  font-size: 20px;
+}
+p.prose { font-family: Montserrat, sans-serif;
+  margin: 0.5em 0 0.5em 0;
+}
+h2.scene {   font-family:'Oswald', sans-serif;
+  font-weight: 400;
+  text-transform:uppercase;
+  text-align: center;
+  color: rgb(80, 96, 99);
+  font-size: 35px;
+  margin: 2em 0 0 0;
+}
+p.song {
+}
+h2.stagedirection {
+}
+.verseline {font-family: Montserrat, sans-serif;
+  margin: 0 0 0.5em 3em;
+}
+span.character_role {
+}
+span.stage_directions_inline {
+}
+
+span.character_beforespeech {
+}
+
+@media screen and (max-width: 800px) {
+  html {font-size:12px;}
+  figure {
+    flex-basis: 400px;
+}
+}
+
+@media screen and (max-width: 700px) 
+{.play,.dramatis {
+   width:100%;
+   padding: 1em 3em;
+  }
+  figure {
+    flex-basis: 400px;
+}
+nav ul {
+  display: none;
+  flex-direction: column;
+}
+
+.hamburger {
+  display: block;
+  float: right;
+  cursor: pointer;
+}
+html { scroll-padding-top:350px;}
+
+/*   ~ the tilda points to the next sibling selector */
+
+input[type="checkbox"]:checked ~ ul {
+  display: block;
+}
+
+li ul {
+  position: static;
+}
+nav ul li {
+  flex: 0 0 auto; /*the same as flex-grow, flex-shrink, flex-basis */
+  width: 100%;
+}
+nav ul li:hover ul {display: flex;
+flex-direction: column;
+width: 100%;}
+}
