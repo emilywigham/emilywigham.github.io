@@ -322,6 +322,10 @@ nav ul li {
 nav ul li:hover ul {display: flex;
 flex-direction: column;
 width: 100%;}
+<<<<<<< HEAD
 
 footer {padding: auto;}
 }
+=======
+}
+>>>>>>> 0fa1138d046f3321848e92c147fa09c8abfd5528
