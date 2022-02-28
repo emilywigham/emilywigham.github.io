@@ -19,6 +19,7 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    
 }
 
 figure {
@@ -43,7 +44,8 @@ h1{font-family: 'Anton', sans-serif;
 text-align: center;
 text-transform:uppercase;
 margin: 1em 0 1px 0;
-font-size: 65px
+font-size: 65px;
+background-color: rgb(143, 167, 172);
 }
 
 h2 {font-family:'Oswald', sans-serif;
