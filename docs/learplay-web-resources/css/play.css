@@ -175,6 +175,7 @@ h1.title { font-family:'Anton', sans-serif;
 
 }
 p.stagedirection balance-text {
+  text-align:left;
 
 }
 p.character { 
